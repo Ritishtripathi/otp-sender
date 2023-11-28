@@ -4,13 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    h1{
+        text-align: center;
+    
+     }
+     form{
+        height:40vh;
+        width:30vw;
+        border-radius:5px;
+        border:1px solid green;
+        margin-left:35vw;
+        margin-top:25vh;
+        background:white;
+     }
+     body{
+        background-color: blueviolet;
+     }
+     input{
+        height:5vh;
+        width:22vw;
+        border:1px solid green;
+        border-radius:5px;
+        margin-left:3vw;
+        margin-top:1vh;
+     }
+     label{
+        font-size:20px;
+        font-weight: bold;
+        margin-left:3vw;
+        
+     }
+     button{
+        height:5vh;
+        width:22vw;
+        border:1px solid green;
+        border-radius:5px;
+        margin-left:3vw;
+        margin-top:3vh;
+        background: blueviolet;
+        color:white;
+        font-weight:bold;
+     }
+    </style>
 </head>
 <body>
-    <h1>Send OTP</h1>
+   
     <form action="/send-otp" method="post">
-<label>Phone Number</label>
-<input type="number" name="phonenumber" id="phonenumber" required>
-<button  type="submit">Send</button>
+        <h1>Send OTP</h1>
+        <label>Phone Number</label>
+        <input type="number" name="phonenumber" id="phonenumber" required>
+        <button  type="submit">Send</button>
     </form>
 </body>
 </html>
